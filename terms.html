@@ -1,11 +1,127 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Terms of Service</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DailyBoost — Terms of Service</title>
+  <meta name="description" content="DailyBoost Terms of Service" />
+  <style>
+    :root{
+      --bg:#0b1220; --card:#101a33; --text:#e7ecff; --muted:#b7c0e6;
+      --line:rgba(255,255,255,.10); --accent:#4da3ff; --chip:rgba(77,163,255,.14);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: radial-gradient(900px 500px at 20% 10%, rgba(77,163,255,.22), transparent 55%),
+                  radial-gradient(900px 500px at 80% 30%, rgba(112,72,255,.18), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:40px 16px 64px}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:14px 16px; border:1px solid var(--line); background:rgba(16,26,51,.75);
+      border-radius:16px; backdrop-filter: blur(8px);
+    }
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{
+      width:36px; height:36px; border-radius:12px;
+      background: linear-gradient(135deg, #4da3ff, #7b5cff);
+      box-shadow:0 10px 25px rgba(0,0,0,.25);
+    }
+    .brand h1{font-size:15px; margin:0}
+    .brand .sub{font-size:12px; color:var(--muted); margin-top:2px}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:999px; background:var(--chip); border:1px solid var(--line);
+      color:var(--text); font-size:12px;
+    }
+    .card{
+      margin-top:18px; padding:22px 20px;
+      border:1px solid var(--line); border-radius:18px;
+      background: rgba(16,26,51,.72);
+      box-shadow:0 18px 50px rgba(0,0,0,.35);
+    }
+    h2{margin:0 0 10px; font-size:22px}
+    h3{margin:18px 0 8px; font-size:16px}
+    p,li{color:var(--muted); line-height:1.6}
+    ul{margin:8px 0 0 18px}
+    .footer{
+      margin-top:18px; color:var(--muted); font-size:12px;
+      display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center;
+      border-top:1px solid var(--line); padding-top:14px;
+    }
+    .note{font-size:12px; color:var(--muted)}
+  </style>
 </head>
+
 <body>
-  <h1>Terms of Service</h1>
-  <p>DailyBoost is a web application that helps users publish educational and motivational video content to social platforms.</p>
-  <p>By using this service, you agree to these terms.</p>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>DailyBoost</h1>
+          <div class="sub">Terms of Service</div>
+        </div>
+      </div>
+      <div class="chip">Effective Date: <strong>2026-01-01</strong></div>
+    </div>
+
+    <div class="card">
+      <h2>Terms of Service</h2>
+      <p>
+        Welcome to <strong>DailyBoost</strong>. By accessing or using this web application, you agree to these Terms of Service.
+      </p>
+
+      <h3>1. Service Description</h3>
+      <p>
+        DailyBoost is a web-based tool that helps users create and prepare motivational or educational short-form videos.
+        Users may customize captions, voice narration, and background media, and prepare videos for platforms such as TikTok,
+        YouTube Shorts, and Instagram Reels.
+      </p>
+
+      <h3>2. User Control</h3>
+      <p>
+        All actions are initiated and controlled by the user. DailyBoost does not publish content automatically without user action.
+      </p>
+
+      <h3>3. User Responsibilities</h3>
+      <ul>
+        <li>You are responsible for the content you create, upload, or publish.</li>
+        <li>You must ensure your content complies with applicable laws and platform rules.</li>
+      </ul>
+
+      <h3>4. Third-Party Services</h3>
+      <p>
+        DailyBoost may integrate with third-party services (for example, TikTok APIs) to enable user-requested features.
+        We do not control third-party services and are not responsible for their availability or policy changes.
+      </p>
+
+      <h3>5. No Guarantees</h3>
+      <p>
+        DailyBoost is provided on an “as is” basis. We do not guarantee platform approval, performance, reach, or engagement results.
+      </p>
+
+      <h3>6. Contact</h3>
+      <p class="note">
+        Questions about these Terms? Email: <a href="mailto:contact@dailyboost.app">contact@dailyboost.app</a>
+      </p>
+
+      <div class="footer">
+        <div>© <span id="y"></span> DailyBoost</div>
+        <div>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
