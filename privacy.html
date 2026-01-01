@@ -1,11 +1,130 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Privacy Policy</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DailyBoost — Privacy Policy</title>
+  <meta name="description" content="DailyBoost Privacy Policy" />
+  <style>
+    :root{
+      --bg:#0b1220; --card:#101a33; --text:#e7ecff; --muted:#b7c0e6;
+      --line:rgba(255,255,255,.10); --accent:#4da3ff; --chip:rgba(77,163,255,.14);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: radial-gradient(900px 500px at 20% 10%, rgba(77,163,255,.22), transparent 55%),
+                  radial-gradient(900px 500px at 80% 30%, rgba(112,72,255,.18), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:40px 16px 64px}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:14px 16px; border:1px solid var(--line); background:rgba(16,26,51,.75);
+      border-radius:16px; backdrop-filter: blur(8px);
+    }
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{
+      width:36px; height:36px; border-radius:12px;
+      background: linear-gradient(135deg, #4da3ff, #7b5cff);
+      box-shadow:0 10px 25px rgba(0,0,0,.25);
+    }
+    .brand h1{font-size:15px; margin:0}
+    .brand .sub{font-size:12px; color:var(--muted); margin-top:2px}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border-radius:999px; background:var(--chip); border:1px solid var(--line);
+      color:var(--text); font-size:12px;
+    }
+    .card{
+      margin-top:18px; padding:22px 20px;
+      border:1px solid var(--line); border-radius:18px;
+      background: rgba(16,26,51,.72);
+      box-shadow:0 18px 50px rgba(0,0,0,.35);
+    }
+    h2{margin:0 0 10px; font-size:22px}
+    h3{margin:18px 0 8px; font-size:16px}
+    p,li{color:var(--muted); line-height:1.6}
+    ul{margin:8px 0 0 18px}
+    .footer{
+      margin-top:18px; color:var(--muted); font-size:12px;
+      display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center;
+      border-top:1px solid var(--line); padding-top:14px;
+    }
+    .note{font-size:12px; color:var(--muted)}
+  </style>
 </head>
+
 <body>
-  <h1>Privacy Policy</h1>
-  <p>DailyBoost respects user privacy and only stores data necessary for authentication and content publishing.</p>
-  <p>No personal data is sold or shared with third parties.</p>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>DailyBoost</h1>
+          <div class="sub">Privacy Policy</div>
+        </div>
+      </div>
+      <div class="chip">Effective Date: <strong>2026-01-01</strong></div>
+    </div>
+
+    <div class="card">
+      <h2>Privacy Policy</h2>
+      <p>
+        DailyBoost respects your privacy. This Privacy Policy explains how information is collected, used, and protected
+        when you use the DailyBoost web application.
+      </p>
+
+      <h3>1. Information We Collect</h3>
+      <ul>
+        <li>Basic account information (e.g. email address) if applicable</li>
+        <li>Generated content metadata (e.g. selected quote, style, timestamps)</li>
+        <li>Platform connection data when the user chooses to connect an account (e.g. TikTok authorization)</li>
+      </ul>
+      <p class="note">We do not collect platform passwords or private credentials.</p>
+
+      <h3>2. How We Use Information</h3>
+      <ul>
+        <li>Provide core application functionality</li>
+        <li>Generate and manage video content</li>
+        <li>Enable user-requested publishing actions</li>
+      </ul>
+
+      <h3>3. Data Sharing</h3>
+      <p>
+        DailyBoost does not sell or rent personal data.
+        Data is shared with third-party platforms only when required to perform actions requested by the user.
+      </p>
+
+      <h3>4. Data Security</h3>
+      <p>
+        We take reasonable technical measures to protect user data. However, no online service can guarantee complete security.
+      </p>
+
+      <h3>5. User Control</h3>
+      <p>
+        Users may disconnect connected platforms or stop using DailyBoost at any time.
+      </p>
+
+      <h3>6. Contact</h3>
+      <p class="note">
+        Privacy questions? Email: <a href="mailto:privacy@dailyboost.app">privacy@dailyboost.app</a>
+      </p>
+
+      <div class="footer">
+        <div>© <span id="y"></span> DailyBoost</div>
+        <div>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
